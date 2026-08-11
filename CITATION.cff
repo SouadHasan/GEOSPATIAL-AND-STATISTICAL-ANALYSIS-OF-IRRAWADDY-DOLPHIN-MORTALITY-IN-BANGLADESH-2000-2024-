@@ -1,0 +1,103 @@
+cff-version: 1.2.0
+message: "If you use this data, code, or research in your work, please cite it as follows:"
+
+authors:
+  - family-names: "Ishan"
+    given-names: "Souad Hasan"
+    orcid: "https://orcid.org/0009-0006-8264-4492"
+    affiliation: "Institute of Marine Sciences, University of Chittagong"
+    email: "souadhasanishan@std.cu.ac.bd"
+  - family-names: "Chowdhury"
+    given-names: "Mohammad Zahedur Rahman"
+    orcid: "https://orcid.org/0009-0006-0697-6006"
+    affiliation: "University of Chittagong"
+    email: "zahedims@cu.ac.bd"
+
+title: "Geospatial and Statistical Analysis of Irrawaddy Dolphin Mortality in Bangladesh (2000-2024)"
+version: 1.0.0
+date-released: 2026-07-28
+
+identifiers:
+  - type: "doi"
+    value: "10.2139/ssrn.7181758"
+    description: "SSRN Preprint"
+  - type: "url"
+    value: "https://github.com/[your-username]/irrawaddy-dolphin-mortality-bangladesh"
+    description: "GitHub Repository"
+
+abstract: |
+  This repository contains the complete dataset, analytical code, and supplementary 
+  materials from a comprehensive geospatial and statistical study of Irrawaddy dolphin 
+  (Orcaella brevirostris) mortality in the Sundarbans ecosystem and adjacent coastal 
+  waters of Bangladesh (2000-2024). The research analyzed 135 dolphin deaths across 
+  29 mortality events, identifying significant spatial clustering (Moran's I = 0.782, 
+  p < 0.00001), primary threats (bycatch: 68.1%, vessel strikes: 25.9%), and critical 
+  conservation zones.
+
+keywords:
+  - "Irrawaddy dolphin"
+  - "Orcaella brevirostris"
+  - "Marine mammal conservation"
+  - "Spatial analysis"
+  - "GIS"
+  - "Bycatch"
+  - "Sundarbans"
+  - "Bangladesh"
+  - "Cetacean conservation"
+  - "Hotspot analysis"
+  - "Conservation planning"
+  - "Fisheries management"
+  - "Endangered species"
+
+license:
+  - name: "Creative Commons Attribution 4.0 International"
+    url: "https://creativecommons.org/licenses/by/4.0/"
+    applies-to: "data"
+  - name: "MIT License"
+    url: "https://opensource.org/licenses/MIT"
+    applies-to: "code"
+
+type: "article"
+
+repository: "https://github.com/[your-username]/irrawaddy-dolphin-mortality-bangladesh"
+repository-code: "https://github.com/[your-username]/irrawaddy-dolphin-mortality-bangladesh"
+
+references:
+  - type: "article"
+    authors:
+      - family-names: "Ishan"
+        given-names: "Souad Hasan"
+      - family-names: "Chowdhury"
+        given-names: "Mohammad Zahedur Rahman"
+    title: "Geospatial and Statistical Analysis of Irrawaddy Dolphin Mortality in Bangladesh (2000-2024)"
+    year: 2026
+    doi: "10.2139/ssrn.7181758"
+    url: "https://doi.org/10.2139/ssrn.7181758"
+    journal: "SSRN"
+    publisher: "Elsevier"
+
+contact:
+  - family-names: "Ishan"
+    given-names: "Souad Hasan"
+    email: "souadhasanishan@std.cu.ac.bd"
+    affiliation: "Institute of Marine Sciences, University of Chittagong"
+    orcid: "https://orcid.org/0009-0006-8264-4492"
+  - family-names: "Chowdhury"
+    given-names: "Mohammad Zahedur Rahman"
+    email: "zahedims@cu.ac.bd"
+    affiliation: "University of Chittagong"
+    orcid: "https://orcid.org/0009-0006-0697-6006"
+
+preferred-citation:
+  type: "article"
+  authors:
+    - family-names: "Ishan"
+      given-names: "Souad Hasan"
+    - family-names: "Chowdhury"
+      given-names: "Mohammad Zahedur Rahman"
+  title: "Geospatial and Statistical Analysis of Irrawaddy Dolphin Mortality in Bangladesh (2000-2024)"
+  year: 2026
+  doi: "10.2139/ssrn.7181758"
+  url: "https://doi.org/10.2139/ssrn.7181758"
+  journal: "SSRN"
+  publisher: "Elsevier"
