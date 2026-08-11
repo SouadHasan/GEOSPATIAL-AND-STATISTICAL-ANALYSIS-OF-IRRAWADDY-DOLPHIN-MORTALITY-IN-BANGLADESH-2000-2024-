@@ -1,0 +1,14 @@
+Metric,Value,Units,Interpretation
+Mean_Center_X,244367.10,meters E,Mortality distribution epicenter
+Mean_Center_Y,2442836.72,meters N,Geographic balance point
+Standard_Distance,80.4,km radius,Core impact zone (68% of events)
+Directional_Major_Axis,105.8,km length,River corridor alignment
+Directional_Minor_Axis,41.6,km width,Lateral habitat use
+Ellipse_Orientation,107.67,degrees from north,Pussur-Sibsa-Baleswar alignment
+Ellipse_Area,13815,km²,Mortality concentration zone
+Aspect_Ratio,2.54:1,ratio,Strong river-channel dependency
+Global_Morans_I,0.782,,Very strong clustering (p<0.00001)
+Peak_Clustering_Distance,20,km,Optimal management scale
+Significant_Range,10-80,km,Multi-scale clustering
+HH_Clusters,8,,Primary mortality hotspots
+R_Squared_Local_Morans,0.753,,Strong spatial dependence

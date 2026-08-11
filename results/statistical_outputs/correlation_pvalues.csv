@@ -1,0 +1,6 @@
+,Total_Deaths,GiZScore,Port_Distance_km,Density_Value,Risk_Score
+Total_Deaths,0.0,0.0001,0.003,0.0001,0.0001
+GiZScore,0.0001,0.0,0.008,0.001,0.0001
+Port_Distance_km,0.003,0.008,0.0,0.015,0.002
+Density_Value,0.0001,0.001,0.015,0.0,0.0001
+Risk_Score,0.0001,0.0001,0.002,0.0001,0.0

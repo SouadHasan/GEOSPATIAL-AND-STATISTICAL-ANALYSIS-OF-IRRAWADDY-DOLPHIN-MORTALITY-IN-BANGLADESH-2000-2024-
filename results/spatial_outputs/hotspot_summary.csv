@@ -1,0 +1,7 @@
+Hotspot_ID,Location,Deaths,GiZScore,GiPValue,Confidence,Classification
+HS-01,Kuakata Coast 2021,24,3.27,0.001,99%,CRITICAL
+HS-02,Kuakata Coast 2020,18,2.23,0.026,95%,CRITICAL
+HS-03,Sonarchar 2019,15,1.70,0.089,90%,HIGH
+HS-04,Kuakata Coast 2023,15,1.70,0.089,90%,HIGH
+HS-05,Kuakata Coast 2022,8,1.50,0.134,-,MODERATE
+HS-06,Kuakata Coast 2024,10,1.60,0.110,-,MODERATE

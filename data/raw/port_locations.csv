@@ -1,0 +1,11 @@
+Port_Name,Port_Type,Latitude,Longitude,Region,Activity_Level
+Mongla Fishery Ghat,Fishing,22.2900,89.3600,Bagerhat,High
+Chalna Fishing Harbor,Fishing,22.3700,89.3200,Khulna,High
+Port of Mongla,Major Commercial,22.2900,89.3600,Bagerhat,Medium
+Port of Chittagong,Major Commercial,22.1900,91.1900,Chittagong,Very High
+Payra Port,Major Commercial,22.1500,90.3300,Patuakhali,Medium
+Cox's Bazar Fishing Port,Fishing,21.4500,91.9500,Cox's Bazar,High
+Teknaf Fishing Port,Fishing,20.8700,92.2900,Cox's Bazar,Medium
+Sandwip Fishing Port,Fishing,22.3300,91.8200,Chittagong,Medium
+St. Martin's Fishing Port,Fishing,20.8600,92.3000,Cox's Bazar,Low
+Kuakata Fishing Port,Fishing,21.8200,90.1200,Patuakhali,High

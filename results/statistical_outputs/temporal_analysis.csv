@@ -1,0 +1,6 @@
+Period,Total_Deaths,Events,Mean_Per_Event,Std_Dev,Trend
+2000-2004,8,4,2.0,1.41,Stable
+2005-2009,15,6,2.5,1.87,Increasing
+2010-2014,18,5,3.6,2.30,Accelerating
+2015-2019,27,4,6.8,5.56,Sharp Increase
+2020-2024,67,10,6.7,6.83,Peak Mortality

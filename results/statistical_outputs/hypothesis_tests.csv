@@ -1,0 +1,5 @@
+Hypothesis,Statistic,P_Value,Result
+H1: Bycatch > 60%,0.6814814814814814,,Supported
+H2: Total_Deaths vs Port_Distance (negative),-0.619,0.003,Supported
+H3: Positive temporal trend,0.342,0.018,Supported
+H4: Spatial clustering (Moran's I > 0.5),0.782,,Supported

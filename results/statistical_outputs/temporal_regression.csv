@@ -1,0 +1,9 @@
+Metric,Value
+Slope,0.342
+Intercept,-684.567
+R_Squared,0.623
+P_Value,0.018
+Mann_Kendall_Tau,0.481
+Mann_Kendall_P_Value,0.007
+Change_Point_Year,2015
+Change_Point_P_Value,0.032

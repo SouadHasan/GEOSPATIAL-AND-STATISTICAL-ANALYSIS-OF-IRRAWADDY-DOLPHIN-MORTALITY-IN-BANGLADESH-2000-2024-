@@ -1,0 +1,30 @@
+Year,Latitude,Longitude,Region_Type,Area_Name,Entanglement_Bycatch,Boat_Strikes,Other_Causes,Total_Deaths
+2000,21.8256,89.5547,Sundarbans Core,Sundarbans West,1,1,1,3
+2001,21.8221,89.5498,Sundarbans Core,Sundarbans West,0,1,0,1
+2003,22.0869,89.6864,Sundarbans Core,Baleswar River,2,0,0,2
+2004,22.0834,89.6821,Sundarbans Core,Baleswar River,1,0,0,1
+2005,21.7492,89.3487,Sundarbans Core,Sundarbans South,0,2,1,3
+2007,22.4431,89.5539,Sundarbans Core,Dhangmari,2,1,0,3
+2008,22.4418,89.5503,Sundarbans Core,Dhangmari,1,1,0,2
+2009,22.1718,89.4215,Sundarbans Core,Supati Lake,2,1,0,3
+2010,22.4412,89.5515,Sundarbans Core,Dhangmari,1,1,0,2
+2011,22.1718,89.4215,Sundarbans Core,Supati Lake,1,1,0,2
+2012,21.8039,89.4703,Sundarbans Core,Hiron Point,1,2,0,3
+2013,21.8039,89.4703,Sundarbans Core,Hiron Point,1,1,0,2
+2014,22.0875,89.6858,Sundarbans Core,Baleswar River,2,1,0,3
+2015,22.2239,89.5239,Sundarbans Core,Kachikhali,1,2,0,3
+2016,22.2939,89.5839,Sundarbans Core,Jamtala,1,2,0,3
+2017,22.5039,89.6039,Sundarbans Core,Karamjal,2,2,4,8
+2018,22.5039,89.6039,Sundarbans Core,Karamjal,1,1,0,2
+2019,22.1869,90.7536,Coastal Area,Sonarchar,14,1,0,15
+2019,21.4567,91.9567,Chittagong Coast,Cox's Bazar,1,0,0,1
+2020,21.82,90.12,Coastal Area,Kuakata Coast,18,0,0,18
+2020,21.4632,91.9489,Chittagong Coast,Cox's Bazar,1,0,0,1
+2020,22.3256,91.8234,Chittagong Coast,Sandwip,5,0,0,5
+2020,20.8567,92.3015,Chittagong Coast,St. Martin's,5,0,0,5
+2021,21.82,90.12,Coastal Area,Kuakata Coast,24,0,0,24
+2021,21.4589,91.9523,Chittagong Coast,Cox's Bazar,1,1,0,2
+2022,21.82,90.12,Coastal Area,Kuakata Coast,8,0,0,8
+2022,21.4552,91.9548,Chittagong Coast,Cox's Bazar,1,0,0,1
+2023,21.82,90.12,Coastal Area,Kuakata Coast,15,0,0,15
+2024,21.82,90.12,Coastal Area,Kuakata Coast,10,0,0,10
