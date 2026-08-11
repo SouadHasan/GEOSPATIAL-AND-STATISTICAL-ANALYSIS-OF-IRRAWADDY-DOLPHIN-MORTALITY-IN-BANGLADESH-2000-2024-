@@ -1,0 +1,98 @@
+# ============================================
+# AUTO-DETECT TEXT FILES
+# ============================================
+* text=auto
+
+# ============================================
+# DOCUMENTATION
+# ============================================
+*.md text diff=markdown
+*.txt text
+*.tex text
+README.md text diff=markdown
+
+# ============================================
+# MICROSOFT WORD (DOCX)
+# ============================================
+*.docx binary
+*.doc binary
+
+# ============================================
+# PYTHON
+# ============================================
+*.py text diff=python
+*.ipynb text diff=jupyternotebook
+requirements.txt text
+*.cfg text
+*.ini text
+*.toml text
+
+# ============================================
+# ARCGIS PRO
+# ============================================
+*.aprx binary
+*.atbx text diff=xml
+*.pyt text diff=python
+
+# Shapefiles
+*.shp binary
+*.shx binary
+*.dbf binary
+*.prj text
+*.cpg text
+*.sbn binary
+*.sbx binary
+
+# Rasters
+*.tif binary
+*.tiff binary
+*.img binary
+*.vrt text
+
+# ============================================
+# DATA FILES
+# ============================================
+*.csv text diff=csv
+*.xlsx binary
+*.xls binary
+*.json text diff=json
+*.xml text diff=xml
+
+# ============================================
+# FIGURES
+# ============================================
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.svg text
+*.pdf binary
+
+# ============================================
+# SHELL SCRIPTS (LF line endings)
+# ============================================
+*.sh text eol=lf
+*.bash text eol=lf
+
+# ============================================
+# BINARY FILES (Catch-all)
+# ============================================
+*.zip binary
+*.rar binary
+*.7z binary
+*.tar binary
+*.gz binary
+*.exe binary
+*.dll binary
+*.so binary
+*.bin binary
+*.dat binary
+*.log text
+
+# ============================================
+# LICENSE & CITATION
+# ============================================
+LICENSE text
+CITATION.cff text
+.gitignore text
+.gitattributes text
