@@ -4,6 +4,7 @@
 [![License: MIT](https://img.shields.io/badge/Code%20License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.9+](https://img.shields.io/badge/Python-3.9+-blue.svg)](https://www.python.org/downloads/)
 [![ArcGIS Pro](https://img.shields.io/badge/ArcGIS%20Pro-3.4.2-green.svg)](https://www.esri.com/en-us/arcgis/products/arcgis-pro/overview)
+[![DOI](https://img.shields.io/badge/DOI-10.2139%2Fssrn.7181758-blue.svg)](https://doi.org/10.2139/ssrn.7181758)
 [![Status](https://img.shields.io/badge/Status-Complete-brightgreen.svg)]()
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
 
@@ -14,9 +15,11 @@
 This repository contains the complete dataset, analytical code, and supplementary materials from a comprehensive geospatial and statistical study of **Irrawaddy dolphin** (*Orcaella brevirostris*) mortality in the Sundarbans ecosystem and adjacent coastal waters of Bangladesh (2000-2024).
 
 **Research conducted by:** Souad Hasan Ishan  
+**Co-author:** Mohammad Zahedur Rahman Chowdhury  
 **Institution:** Institute of Marine Sciences, University of Chittagong  
 **Degree:** B.Sc. (Hons') in Marine Science  
 **Term Paper:** MS-499  
+**Preprint:** [SSRN: 10.2139/ssrn.7181758](https://doi.org/10.2139/ssrn.7181758)
 
 ---
 
@@ -49,75 +52,113 @@ This research identifies:
 ---
 
 ## 📊 Repository Structure
-irrawaddy-dolphin-mortality-bangladesh/
+🐬 IRRAWADDY DOLPHIN MORTALITY ANALYSIS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📁 irrawaddy-dolphin-mortality-bangladesh/
 │
-├── README.md # This file
-├── LICENSE # License information
-├── CITATION.cff # Citation metadata
-├── .gitignore # Git ignore rules
-├── .gitattributes # File handling rules
+├── 📄 README.md # Project overview & documentation
+├── 📄 LICENSE # Licensing information
+├── 📄 CITATION.cff # Academic citation metadata
+├── 📄 .gitignore # Version control exclusions
+├── 📄 .gitattributes # File handling specifications
 │
-├── data/
-│ ├── raw/
-│ │ └── mortality_events_2000-2024.csv # Raw mortality data
-│ ├── processed/
-│ │ └── analysis_ready_data.csv # Cleaned analysis data
-│ └── README_data.md # Data dictionary
+├── 📊 data/
+│ ├── 📁 raw/ # Original, unmodified data
+│ │ ├── 📄 mortality_events_2000-2024.csv # 29 events, 135 deaths
+│ │ ├── 📄 port_locations.csv # 10 fishing/commercial ports
+│ │ └── 📄 README_raw_data.md # Raw data documentation
+│ │
+│ ├── 📁 processed/ # Cleaned, analysis-ready data
+│ │ ├── 📄 analysis_ready_data.csv # Derived variables included
+│ │ └── 📄 README_processed_data.md # Processing documentation
+│ │
+│ └── 📄 README_data.md # Main data directory guide
 │
-├── code/
-│ ├── python/
-│ │ ├── 01_data_preprocessing.py # Data cleaning
-│ │ ├── 02_statistical_analysis.py # Stats & correlations
-│ │ ├── 03_visualization.py # Figure generation
-│ │ ├── 04_risk_modeling.py # Composite risk model
-│ │ └── requirements.txt # Python dependencies
-│ ├── arcgis/
-│ │ ├── geoprocessing_tools/
-│ │ │ ├── spatial_analysis.atbx # ArcGIS Pro toolbox
-│ │ │ └── python_scripts/
-│ │ │ ├── hotspot_analysis.py # Getis-Ord Gi
-│ │ │ ├── cluster_analysis.py # Local Moran's I
-│ │ │ └── kde_analysis.py # Kernel Density
-│ │ └── arcgis_project.aprx # ArcGIS Pro project file
-│ └── r_scripts/ # (if applicable)
+├── 💻 code/
+│ ├── 📁 python/ # Python analysis scripts
+│ │ ├── 📄 01_data_preprocessing.py # Data cleaning & validation
+│ │ ├── 📄 02_statistical_analysis.py # Stats & correlations
+│ │ ├── 📄 03_visualization.py # Figure generation
+│ │ ├── 📄 04_risk_modeling.py # Composite risk model
+│ │ └── 📄 requirements.txt # Python dependencies
+│ │
+│ └── 📁 arcgis/ # ArcGIS Pro spatial analysis
+│ ├── 📁 geoprocessing_tools/
+│ │ ├── 📄 spatial_analysis.atbx # ArcGIS toolbox
+│ │ └── 📁 python_scripts/
+│ │ ├── 📄 hotspot_analysis.py # Getis-Ord Gi*
+│ │ ├── 📄 cluster_analysis.py # Local Moran's I
+│ │ └── 📄 kde_analysis.py # Kernel Density
+│ │
+│ └── 📄 arcgis_project.aprx # ArcGIS Pro project
 │
-├── docs/
-│ ├── manuscript/
-│ │ └── ishan_mortality_analysis_2025.pdf # Complete term paper
-│ ├── figures/
-│ │ ├── figure_4.2-1_regional_comparison.png
-│ │ ├── figure_4.3-1_ripley_k_function.png
-│ │ ├── figure_4.3-2_local_moran_clusters.png
-│ │ ├── figure_4.4-1_hotspot_analysis.png
-│ │ ├── figure_4.5-1_temporal_trends.png
-│ │ ├── figure_4.7-1_correlation_matrix.png
-│ │ ├── figure_4.8-1_risk_mortality_relationship.png
-│ │ └── figure_4.8-2_conservation_priority_map.png
-│ └── supplementary/
-│ ├── appendix_a_statistical_outputs.pdf
-│ ├── appendix_b_gis_methodology.pdf
-│ ├── appendix_c_raw_data_sample.pdf
-│ ├── appendix_d_spatial_analysis_parameters.pdf
-│ └── appendix_e_conservation_framework.pdf
+├── 📝 docs/
+│ ├── 📁 manuscript/ # Research paper
+│ │ └── 📄 ishan_mortality_analysis_2025.pdf # Complete term paper
+│ │
+│ ├── 📁 figures/ # High-resolution figures
+│ │ ├── 🖼️ Cluster Map.jpg
+│ │ ├── 🖼️ K function.jpg
+│ │ ├── 🖼️ Cluster.jpg
+│ │ ├── 🖼️ Geographic Distribution.jpg
+│ │ ├── 🖼️ Trendline.png
+│ │ ├── 🖼️ Pearson Correlation.png
+│ │ ├── 🖼️ Risk Score.png
+│ │ ├── 🖼️ Spatial Statistical Analysis.jpg
+│ │ ├── 🖼️ workflow.png # Methodological workflow
+│ │ └── 🖼️ Conservation Future and Policy.png # Conservation Future & Policy
+│ │
+│ └── 📁 supplementary/ # Supplementary materials
+│ ├── 📄 appendix_a_statistical_outputs.md
+│ ├── 📄 appendix_b_gis_methodology.md
+│ ├── 📄 appendix_c_raw_data_sample.md
+│ ├── 📄 appendix_d_spatial_analysis_parameters.md
+│ ├── 📄 appendix_e_conservation_framework.md
+│ ├── 🖼️ Postmortem Status.jpg # Postmortem condition
+│ └── 📄 README.md # Supplementary index
 │
-├── results/
-│ ├── spatial_outputs/
-│ │ ├── hotspot_rasters/
-│ │ ├── density_surfaces/
-│ │ └── cluster_maps/
-│ ├── statistical_outputs/
-│ │ ├── correlation_results.csv
-│ │ ├── regression_results.csv
-│ │ └── temporal_analysis.csv
-│ └── risk_scores/
-│ └── composite_risk_model.csv
+├── 📊 results/
+│ ├── 📁 spatial_outputs/ # GIS analysis outputs
+│ │ ├── 📁 hotspot_rasters/ # Getis-Ord Gi* rasters
+│ │ ├── 📁 density_surfaces/ # KDE surfaces
+│ │ └── 📁 cluster_maps/ # LISA cluster maps
+│ │
+│ ├── 📁 statistical_outputs/ # Statistical analysis results
+│ │ ├── 📄 correlation_results.csv
+│ │ ├── 📄 regression_results.csv
+│ │ └── 📄 temporal_analysis.csv
+│ │
+│ └── 📁 risk_scores/ # Risk modeling outputs
+│ ├── 📄 composite_risk_model.csv
+│ └── 📄 priority_zones.shp
 │
-├── plan/
-│ └── analysis_workflow.md # Methodological workflow
+├── 📓 notebooks/ # Interactive notebooks
+│ ├── 📄 exploratory_analysis.ipynb
+│ └── 📄 visualization_demo.ipynb
 │
-└── notebooks/ # Jupyter notebooks
-├── exploratory_analysis.ipynb
-└── visualization_demo.ipynb
+└── 📋 plan/ # Project documentation
+├── 📄 analysis_workflow.md
+└── 📄 data_management_plan.md
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📌 KEY STATISTICS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+╔═══════════════════════════════════╦══════════════════════════════════════════╗
+║ METRIC ║ VALUE ║
+╠═══════════════════════════════════╬══════════════════════════════════════════╣
+║ Total Deaths ║ 135 ║
+║ Mortality Events ║ 29 ║
+║ Study Period ║ 2000–2024 ║
+║ Spatial Clustering (Moran's I) ║ 0.782 (p < 0.00001) ║
+║ Bycatch Contribution ║ 68.1% ║
+║ Critical Zone Area ║ 147 km² (0.9% of study area) ║
+║ Mortality in Critical Zones ║ 68.1% ║
+║ Temporal Trend ║ +0.342 deaths/year (p = 0.018) ║
+╚═══════════════════════════════════╩══════════════════════════════════════════╝
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 text
 
@@ -134,6 +175,7 @@ text
 | **Jupyter** | Latest | Interactive analysis (optional) |
 
 ### Python Packages (requirements.txt)
+```txt
 pandas>=1.5.0
 numpy>=1.23.0
 matplotlib>=3.6.0
@@ -142,37 +184,34 @@ scipy>=1.9.0
 scikit-learn>=1.1.0
 statsmodels>=0.13.0
 pysal>=23.0.0
-arcpy>=3.4.0 # Requires ArcGIS Pro
+arcpy>=3.4.0          # Requires ArcGIS Pro
+ArcGIS Pro Extensions Required
+Spatial Analyst
 
-text
+Geostatistical Analyst
 
-### ArcGIS Pro Extensions Required
-- Spatial Analyst
-- Geostatistical Analyst
-- 3D Analyst (optional)
+3D Analyst (optional)
 
----
+📥 Data Access
+Included in Repository (Small Files)
+data/raw/mortality_events_2000-2024.csv - Full mortality dataset
 
-## 📥 Data Access
+data/processed/analysis_ready_data.csv - Cleaned analysis data
 
-### Included in Repository (Small Files)
-- `data/raw/mortality_events_2000-2024.csv` - Full mortality dataset
-- `data/processed/analysis_ready_data.csv` - Cleaned analysis data
-- Shapefiles for study area boundaries (if < 100MB)
+Shapefiles for study area boundaries (if < 100MB)
 
-### Large Files (Available on Request / Zenodo)
-- Full ArcGIS Pro geodatabase (.gdb)
-- High-resolution raster outputs
-- Complete spatial analysis results
+Large Files (Available on Request / Zenodo)
+Full ArcGIS Pro geodatabase (.gdb)
 
-**Access Request:** Contact author (see below)
+High-resolution raster outputs
 
----
+Complete spatial analysis results
 
-## 🔄 Reproduction Instructions
+Access Request: Contact author (see below)
 
-### 1. Clone the Repository
-```bash
+🔄 Reproduction Instructions
+1. Clone the Repository
+bash
 git clone https://github.com/[your-username]/irrawaddy-dolphin-mortality-bangladesh.git
 cd irrawaddy-dolphin-mortality-bangladesh
 2. Set Up Python Environment
@@ -205,14 +244,16 @@ Outputs will be saved to results/spatial_outputs/
 
 📈 Key Figures
 Figure	Description
-4.2-1	Regional Comparison of Mortality
-4.3-1	Ripley's K-function Clustering
-4.3-2	Local Moran's I Clusters
-4.4-1	Hotspot Analysis (30/60/90 km)
-4.5-1	Temporal Trends (2000-2024)
-4.7-1	Risk Factor Correlation Matrix
-4.8-1	Risk-Mortality Relationship
-4.8-2	Conservation Priority Zones
+Cluster Map.jpg	Local Moran's I Cluster Map
+K function.jpg	Ripley's K-function Clustering Analysis
+Cluster.jpg	Spatial Clustering Visualization
+Geographic Distribution.jpg	Geographic Distribution of Mortality Events
+Trendline.png	Temporal Trends (2000-2024)
+Pearson Correlation.png	Risk Factor Correlation Matrix
+Risk Score.png	Risk-Mortality Relationship
+Spatial Statistical Analysis.jpg	Comprehensive Spatial Statistical Output
+workflow.png	Methodological Workflow Diagram
+Conservation Future and Policy.png	Conservation Future and Policy Framework
 All figures available in docs/figures/
 
 📝 Citation
@@ -220,18 +261,19 @@ If you use this data or code in your research, please cite:
 
 APA Format:
 
-Ishan, S. H. (2025). Geospatial and Statistical Analysis of Irrawaddy Dolphin Mortality in Bangladesh (2000-2024) [Data and Code]. Institute of Marine Sciences, University of Chittagong. GitHub. https://github.com/[your-username]/irrawaddy-dolphin-mortality-bangladesh
+Ishan, S. H., & Chowdhury, M. Z. R. (2026). Geospatial and Statistical Analysis of Irrawaddy Dolphin Mortality in Bangladesh (2000-2024) [Data and Code]. Institute of Marine Sciences, University of Chittagong. SSRN Preprint. https://doi.org/10.2139/ssrn.7181758
 
 BibTeX Format:
 
 bibtex
-@misc{ishan2025irrawaddy,
-  author = {Ishan, Souad Hasan},
+@article{ishan2026irrawaddy,
+  author = {Ishan, Souad Hasan and Chowdhury, Mohammad Zahedur Rahman},
   title = {Geospatial and Statistical Analysis of Irrawaddy Dolphin Mortality in Bangladesh (2000-2024)},
-  year = {2025},
-  publisher = {Institute of Marine Sciences, University of Chittagong},
-  howpublished = {\url{https://github.com/[your-username]/irrawaddy-dolphin-mortality-bangladesh}},
-  note = {Term Paper (MS-499)}
+  year = {2026},
+  journal = {SSRN},
+  publisher = {Elsevier},
+  doi = {10.2139/ssrn.7181758},
+  url = {https://doi.org/10.2139/ssrn.7181758}
 }
 📄 License
 Data: Creative Commons Attribution 4.0 International (CC BY 4.0)
@@ -264,9 +306,10 @@ Update the README if needed
 
 📧 Contact & Support
 Author: Souad Hasan Ishan
+Co-author: Mohammad Zahedur Rahman Chowdhury
 Affiliation: Institute of Marine Sciences, University of Chittagong
-Email: [Your Email Address]
-ORCID: [Your ORCID ID]
+Email: souadhasanishan@std.cu.ac.bd
+ORCID: 0009-0006-8264-4492
 
 Questions?
 Open an Issue
@@ -319,63 +362,56 @@ text
 
 ---
 
-## Additional File: `README_data.md` (Data Dictionary)
-
-Create this file in the `data/` folder to document your dataset:
+## 📁 docs/supplementary/README.md
 
 ```markdown
-# Data Dictionary: Irrawaddy Dolphin Mortality Database
+# Supplementary Materials Index
 
-## mortality_events_2000-2024.csv
+## Overview
+This folder contains all supplementary materials supporting the research paper "Geospatial and Statistical Analysis of Irrawaddy Dolphin Mortality in Bangladesh (2000-2024)."
 
-| Field Name | Data Type | Description | Valid Values |
-|------------|-----------|-------------|--------------|
-| **Year** | Integer | Calendar year of mortality event | 2000-2024 |
-| **Latitude** | Decimal | GPS coordinate (WGS 1984, decimal degrees) | 20.5-23.5°N |
-| **Longitude** | Decimal | GPS coordinate (WGS 1984, decimal degrees) | 89.0-92.5°E |
-| **Region_Type** | Text | Ecological region classification | Sundarbans Core, Coastal Area, Chittagong Coast |
-| **Area_Name** | Text | Specific location/water body | Sundarbans West, Baleswar River, Kuakata Coast, etc. |
-| **Entanglement_Bycatch** | Integer | Deaths from fishing gear entanglement | 0-24 |
-| **Boat_Strikes** | Integer | Deaths from vessel collisions | 0-4 |
-| **Other_Causes** | Integer | Deaths from pollution, disease, unknown | 0-4 |
-| **Total_Deaths** | Integer | Sum of all causes | 1-24 |
-| **GiZScore** | Float | Getis-Ord Gi z-score (hotspot analysis) | -2.76 to 2.21 |
-| **Port_Distance_km** | Float | Distance to nearest fishing port (km) | 14.56-57.08 |
-| **Density_Value** | Float | Kernel density estimation value | 0.03-0.25 |
-| **Risk_Score** | Float | Composite risk assessment score | 0.12-0.87 |
+## Contents
 
-## port_locations.csv
+### 📄 Appendices (Markdown)
 
-| Field Name | Data Type | Description | Valid Values |
-|------------|-----------|-------------|--------------|
-| **Port_Name** | Text | Official name of port/fishing harbor | Mongla Fishery Ghat, Port of Chittagong, etc. |
-| **Port_Type** | Text | Category of port | Fishing, Major Commercial |
-| **Latitude** | Decimal | GPS coordinate (WGS 1984, decimal degrees) | 20.0-23.0°N |
-| **Longitude** | Decimal | GPS coordinate (WGS 1984, decimal degrees) | 89.0-92.5°E |
-| **Region** | Text | Administrative district | Bagerhat, Khulna, Chittagong |
-| **Activity_Level** | Text | Relative fishing/vessel traffic | Low, Medium, High, Very High |
+| File | Description |
+|------|-------------|
+| **appendix_a_statistical_outputs.md** | Complete statistical outputs including descriptive statistics, correlation matrices, regression results, temporal analysis, and hypothesis tests |
+| **appendix_b_gis_methodology.md** | Detailed GIS methodology including software configuration, coordinate systems, spatial analysis parameters, and quality control procedures |
+| **appendix_c_raw_data_sample.md** | Raw data samples including mortality events (2000-2024), port locations, and complete data dictionary |
+| **appendix_d_spatial_analysis_parameters.md** | Spatial analysis parameters for Ripley's K-function, Moran's I, Getis-Ord Gi*, Kernel Density, and processing configurations |
+| **appendix_e_conservation_framework.md** | Conservation planning framework including priority criteria, management interventions, implementation timeline, monitoring indicators, and budget estimates |
 
-## Data Quality Notes
+### 🖼️ Figures
 
-- **Spatial Accuracy**: ±50 meters (GPS-validated)
-- **Attribute Accuracy**: 98.5% (field validated)
-- **Temporal Coverage**: Complete from 2000-2024
-- **Data Completeness**: 100% for required fields
-- **Missing Data**: <2% for optional fields (multiple imputation used)
+| File | Description |
+|------|-------------|
+| **Postmortem Status.jpg** | Photographic documentation of postmortem condition of Irrawaddy dolphins |
 
-## Collection Methodology
+## How to Use
 
-- **Mortality Events**: Systematic documentation through Forest Department and WCS
-- **Verification**: Veterinary assessment for cause of death
-- **Spatial Data**: Handheld GPS (accuracy ±5-10m)
-- **Temporal Data**: Cross-referenced with official records
+1. **Browse** the appendices for detailed methodology and results
+2. **Reference** specific sections as needed for your research
+3. **Cite** these materials using the main paper citation
 
-## Usage Notes
+## Citation
 
-- For spatial analysis, always project to **WGS 1984 UTM Zone 46N (EPSG:32646)**
-- Coordinate system for raw data: **WGS 1984 (EPSG:4326)**
-- Always cite the source when using this data
-- Check for updates at the main repository
+If using these supplementary materials, please cite:
 
-**Version:** 1.0  
-**Last Updated:** November 2025
+Ishan, S.H., & Chowdhury, M.Z.R. (2026). Geospatial and Statistical Analysis of Irrawaddy Dolphin Mortality in Bangladesh (2000-2024). SSRN. doi:10.2139/ssrn.7181758
+
+## Version
+
+| Version | Date | Changes |
+|---------|------|---------|
+| 1.0 | November 2025 | Initial release |
+
+## Contact
+
+**Author:** Souad Hasan Ishan  
+**Email:** souadhasanishan@std.cu.ac.bd  
+**ORCID:** [0009-0006-8264-4492](https://orcid.org/0009-0006-8264-4492)
+
+---
+
+*These supplementary materials are provided to support the reproducibility and transparency of the research.*
